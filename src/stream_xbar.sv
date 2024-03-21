@@ -125,7 +125,8 @@ module stream_xbar #(
       .DataType  ( payload_t ),
       .ExtPrio   ( ExtPrio   ),
       .AxiVldRdy ( AxiVldRdy ),
-      .LockIn    ( LockIn    )
+      .LockIn    ( LockIn    ),
+      .FairArb   ( 1'b0)
     ) i_rr_arb_tree (
       .clk_i,
       .rst_ni,
